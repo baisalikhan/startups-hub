@@ -41,4 +41,5 @@ module.exports = withSentryConfig(nextConfig, {
   sourcemaps: {
     deleteSourcemapsAfterUpload: true,
   },
+  telemetry: false,
 });
