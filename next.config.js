@@ -28,7 +28,7 @@ const nextConfig = {
 const { withSentryConfig } = require("@sentry/nextjs");
 
 module.exports = withSentryConfig(nextConfig, {
-  org: "js-mastery-dk",
+  org: "baiscode-studio",
   project: "javascript-nextjs",
   silent: !process.env.CI,
   widenClientFileUpload: true,
@@ -38,4 +38,7 @@ module.exports = withSentryConfig(nextConfig, {
   hideSourceMaps: true,
   disableLogger: true,
   automaticVercelMonitors: true,
+  sourcemaps: {
+    deleteSourcemapsAfterUpload: true,
+  },
 });
